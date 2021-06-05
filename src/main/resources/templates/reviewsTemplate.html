@@ -1,22 +1,38 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="style.css" />
 <head>
-    <title>A List of All Available Reviews</title>
+    <title> Best Tech Youtubers</title>
 </head>
+<style>
+    body {background-color: blue; text-align: center;}
+    li{ display: inline-block; padding: 2.7rem 7.5rem; background-color: white; font-size: .75rem; text-decoration: none; color: black;
+    border-radius: 10px; transition: background 0.5s;}
+    li:hover{ background: red;}
+
+
+</style>
 <body>
 
 <header>
-    <h1>A List of All Reviews</h1>
+    <h1 style="color:red">A List of The Best Tech Youtubers</h1>
 </header>
 
 <main>
     <ul>
         <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.name}"></a></li>
     </ul>
+
+    <p>
+        Hello, and welcome to my review site. Let me give you a little background on why I chose to make this site. For media
+        content my go to is Youtube. I watch so much Youtube to the point where I sign up for their premium account so I would
+        not have to deal with the ads. My favorite thing to watch on youtube is tech youtubers, because of that I wanted to give my
+        opinion on tech youtubers that to me seem the most knowledgeable, honest, and unbiased.
+    </p>
 </main>
 
 <footer>
-    <small>&copy wwci 2020</small>
+
 </footer>
 
 </body>
