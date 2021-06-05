@@ -13,6 +13,13 @@ public class ReviewRepository {
 
     Map<Long,Review> reviewsList = new HashMap<>();
 
+    public ReviewRepository(){
+        Review action = new Review(1L, "Action", "Blind wave");
+
+        reviewsList.put(action.getId(), action);
+
+    }
+
     public ReviewRepository(Review ...reviewsToAdd) {
         for (Review review: reviewsToAdd){
             reviewsList.put(review.getId(), review);
