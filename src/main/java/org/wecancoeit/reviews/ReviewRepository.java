@@ -14,7 +14,7 @@ public class ReviewRepository {
     Map<Long,Review> reviewsList = new HashMap<>();
 
     public ReviewRepository(){
-        Review llt = new Review(1L, "Linus Tech Tip", "Specialist in PC Building");
+        Review llt = new Review(1L, "Linus Tech Tips", "Specialist in PC Building");
         Review mb = new Review(2L, "Marques Brownlee", "All around Tech Reviewer");
         Review rr = new Review(3L, "Rene Ritchie", "Apple Tech Youtube");
 

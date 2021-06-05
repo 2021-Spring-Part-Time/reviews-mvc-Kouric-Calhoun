@@ -5,6 +5,10 @@
 </head>
 <style>
     body{background-color: blue;}
+    h1{color: red; text-align: center;}
+    p{margin-left: 95%; display: inline-block; padding: 1rem 1rem; background-color: white; font-size: .75rem; text-decoration: none; color: black;
+    border-radius: 10px; transition: background 0.5s;}
+    p:hover{background: red;}
 </style>
 <body>
 
@@ -15,13 +19,13 @@
 <main>
     <ul>
         <p><a href="/reviews">Reviews</a></p>
-        <li th:text="${reviewModel.name}"></li>
+<!--        <li th:text="${reviewModel.name}"></li>-->
     </ul>
     <h2 th:text="${reviewModel.description}"></h2>
 </main>
 
 <footer>
-    <small>&copy wwci 2020</small>
+
 </footer>
 
 </body>
