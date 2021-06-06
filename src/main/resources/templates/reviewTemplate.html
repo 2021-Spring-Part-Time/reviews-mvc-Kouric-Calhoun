@@ -5,23 +5,28 @@
 </head>
 <style>
     body{background-color: blue;}
-    h1{color: red; text-align: center;}
+    h1{color: red; text-align: center; font-size:60px;}
     p{margin-left: 95%; display: inline-block; padding: 1rem 1rem; background-color: white; font-size: .75rem; text-decoration: none; color: black;
     border-radius: 10px; transition: background 0.5s;}
     p:hover{background: red;}
+    h2{text-align: center; color:red;}
+
 </style>
 <body>
 
 <header>
+    <p><a href="/reviews">Reviews</a></p>
     <h1 th:text="${reviewModel.name}">A Review</h1>
+    <h2 th:text="${reviewModel.description}"></h2>
+
 </header>
 
 <main>
     <ul>
-        <p><a href="/reviews">Reviews</a></p>
+<!--        <p><a href="/reviews">Reviews</a></p>-->
 <!--        <li th:text="${reviewModel.name}"></li>-->
     </ul>
-    <h2 th:text="${reviewModel.description}"></h2>
+<!--    <h2 th:text="${reviewModel.description}"></h2>-->
 </main>
 
 <footer>
