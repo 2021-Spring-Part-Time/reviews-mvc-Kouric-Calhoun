@@ -8,8 +8,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ReviewRepositoryTest {
     private ReviewRepository underTest;
-    private Review reviewOne = new Review(1L, "review one name", "description");
-    private Review reviewTwo = new Review(2L, "review two name", "description");
+    private Review reviewOne = new Review(1L, "review one name", "description","yy");
+    private Review reviewTwo = new Review(2L, "review two name", "description", "yy2");
 
     @Test
     public void shouldFindReviewOne(){

@@ -10,6 +10,9 @@
     border-radius: 10px; transition: background 0.5s;}
     p:hover{background: red;}
     h2{text-align: center; color:red;}
+    main{ width: 200px;
+  height: 300px;}
+
 
 </style>
 <body>
@@ -17,7 +20,18 @@
 <header>
     <p><a href="/reviews">Reviews</a></p>
     <h1 th:text="${reviewModel.name}">A Review</h1>
-    <h2 th:text="${reviewModel.description}"></h2>
+
+
+<main>
+    <div th:each="review: ${reviewModel}">
+        <a th:href="@{/review(id=${review.id})}">
+            <img id="image" th:src="${review.imageUrl}"></a>
+    </div>
+</main>
+
+
+
+
 
 </header>
 
